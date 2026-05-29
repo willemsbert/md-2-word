@@ -1,8 +1,8 @@
 {
-  "_description": "Traditional academic style. Cambria serif, double-spaced, generous margins. Suits papers, theses, formal reports.",
+  "_description": "Academic style. Cambria serif, 1.5x spaced, generous margins. Suits papers, theses, formal reports.",
   "font": "Cambria",
   "bodySize": 24,
-  "lineSpacing": 480,
+  "lineSpacing": 360,
   "paragraphSpaceAfter": 0,
   "justification": "both",
   "margins": { "top": 1440, "right": 1440, "bottom": 1440, "left": 1440 },

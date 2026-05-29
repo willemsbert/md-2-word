@@ -173,6 +173,41 @@ function buildStyles(cfg) {
     ${rpr(font, bodySize, false, true)}
   </w:style>`,
 
+    // Centred paragraph for placing an image
+    Figure: `<w:style w:type="paragraph" w:styleId="Figure">
+    <w:name w:val="Figure"/>
+    <w:basedOn w:val="Normal"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:jc w:val="center"/>
+      <w:spacing w:before="120" w:after="40"/>
+    </w:pPr>
+  </w:style>`,
+
+    // Caption below a figure or table
+    Caption: `<w:style w:type="paragraph" w:styleId="Caption">
+    <w:name w:val="Caption"/>
+    <w:basedOn w:val="Normal"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:jc w:val="center"/>
+      <w:spacing w:before="40" w:after="160"/>
+    </w:pPr>
+    ${rpr(font, 18, false, true)}
+  </w:style>`,
+
+    ImageCaption: `<w:style w:type="paragraph" w:styleId="ImageCaption">
+    <w:name w:val="Image Caption"/>
+    <w:basedOn w:val="Caption"/>
+    <w:qFormat/>
+  </w:style>`,
+
+    TableCaption: `<w:style w:type="paragraph" w:styleId="TableCaption">
+    <w:name w:val="Table Caption"/>
+    <w:basedOn w:val="Caption"/>
+    <w:qFormat/>
+  </w:style>`,
+
     VerbatimChar: `<w:style w:type="character" w:styleId="VerbatimChar">
     <w:name w:val="Verbatim Char"/>
     <w:basedOn w:val="DefaultParagraphFont"/>

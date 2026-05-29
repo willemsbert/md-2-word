@@ -140,12 +140,14 @@ function buildStyles(cfg) {
     <w:name w:val="Body Text"/>
     <w:basedOn w:val="Normal"/>
     <w:qFormat/>
+    ${rpr(font, bodySize)}
   </w:style>`,
 
     FirstParagraph: `<w:style w:type="paragraph" w:styleId="FirstParagraph">
     <w:name w:val="First Paragraph"/>
     <w:basedOn w:val="Normal"/>
     <w:qFormat/>
+    ${rpr(font, bodySize)}
   </w:style>`,
 
     Compact: `<w:style w:type="paragraph" w:styleId="Compact">
@@ -156,6 +158,7 @@ function buildStyles(cfg) {
       <w:jc w:val="${justification}"/>
       <w:spacing w:line="${lineSpacing}" w:lineRule="auto" w:after="0"/>
     </w:pPr>
+    ${rpr(font, bodySize)}
   </w:style>`,
 
     BlockText: `<w:style w:type="paragraph" w:styleId="BlockText">
@@ -212,6 +215,40 @@ function buildStyles(cfg) {
       <w:spacing w:after="80"/>
     </w:pPr>
     ${rpr(font, bodySize)}
+  </w:style>`,
+
+    Date: `<w:style w:type="paragraph" w:styleId="Date">
+    <w:name w:val="Date"/>
+    <w:basedOn w:val="Normal"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:jc w:val="center"/>
+      <w:spacing w:after="240"/>
+    </w:pPr>
+    ${rpr(font, bodySize, false, true)}
+  </w:style>`,
+
+    AbstractTitle: `<w:style w:type="paragraph" w:styleId="AbstractTitle">
+    <w:name w:val="Abstract Title"/>
+    <w:basedOn w:val="Normal"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:jc w:val="center"/>
+      <w:spacing w:before="240" w:after="120"/>
+    </w:pPr>
+    ${rpr(font, bodySize, true)}
+  </w:style>`,
+
+    Abstract: `<w:style w:type="paragraph" w:styleId="Abstract">
+    <w:name w:val="Abstract"/>
+    <w:basedOn w:val="Normal"/>
+    <w:qFormat/>
+    <w:pPr>
+      <w:jc w:val="both"/>
+      <w:ind w:left="720" w:right="720"/>
+      <w:spacing w:after="160"/>
+    </w:pPr>
+    ${rpr(font, 20)}
   </w:style>`,
   };
 

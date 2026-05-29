@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "Convert Markdown files to .docx",
   "main": "convert.js",
+  "bin": {
+    "md2word-mcp": "mcp-server.js"
+  },
   "scripts": {
-    "convert": "node convert.js"
+    "convert": "node convert.js",
+    "mcp": "node mcp-server.js"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
     "adm-zip": "^0.5.17"
   }
 }

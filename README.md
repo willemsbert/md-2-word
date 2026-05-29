@@ -119,6 +119,48 @@ All size values are in [DXA](https://docs.microsoft.com/en-us/openspecs/office_s
 
 ---
 
+## MCP Server
+
+`mcp-server.js` exposes the converter as a [Model Context Protocol](https://modelcontextprotocol.io) server so that AI assistants (Claude Desktop, Cursor, etc.) can call it directly.
+
+### Start the server
+
+```
+node mcp-server.js        # STDIO transport (default)
+npm run mcp               # same via npm
+```
+
+### Tools
+
+| Tool | Description |
+|---|---|
+| `convert_to_word` | Convert Markdown text to `.docx`. Returns a base64-encoded blob. |
+| `list_styles` | List available style templates. |
+
+`convert_to_word` parameters:
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `markdown` | string | yes | Markdown content to convert |
+| `style` | string | no | Style template (default: `professional`) |
+
+### Configure in Claude Desktop
+
+Add to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "md-2-word": {
+      "command": "node",
+      "args": ["/absolute/path/to/md-2-word/mcp-server.js"]
+    }
+  }
+}
+```
+
+---
+
 ## How it works
 
 ```

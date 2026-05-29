@@ -17,7 +17,7 @@ const AdmZip = require("adm-zip");
 
 const STYLES_DIR    = path.join(__dirname, "styles");
 const TEMPLATES_DIR = path.join(__dirname, "templates");
-const BASE_DOCX     = path.join(__dirname, "templates", "krissen-numbered.docx");
+const BASE_DOCX     = path.join(__dirname, "base.docx");
 
 // ── CLI ───────────────────────────────────────────────────────────────────────
 
@@ -27,7 +27,7 @@ const listOnly = args.includes("--list");
 
 if (!fs.existsSync(BASE_DOCX)) {
   console.error(`Base template not found: ${BASE_DOCX}`);
-  console.error("Download from: https://github.com/krissen/pandoc-extra/raw/master/templates/numbered-sections.docx");
+  console.error("Download base.docx from: https://github.com/krissen/pandoc-extra/raw/master/templates/numbered-sections.docx");
   process.exit(1);
 }
 

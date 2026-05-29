@@ -77,7 +77,7 @@ function buildTemplate(name, cfg) {
       <w:pgMar w:top="${top}" w:right="${right}" w:bottom="${bottom}" w:left="${left}" w:header="709" w:footer="709" w:gutter="0"/>
       <w:footnotePr><w:numRestart w:val="eachSect"/></w:footnotePr>
     </w:sectPr>`;
-  docXml = docXml.replace(/<w:sectPr>[\s\S]*?<\/w:sectPr>/, sectPr);
+  docXml = docXml.replace(/<w:sectPr\b[\s\S]*?<\/w:sectPr>/, sectPr);
   if (!docXml.includes("xmlns:r=")) {
     docXml = docXml.replace(
       "<w:document ",

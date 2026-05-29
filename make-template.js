@@ -257,9 +257,6 @@ function buildFooter(font) {
   <w:p>
     <w:pPr>
       <w:jc w:val="center"/>
-      <w:pBdr>
-        <w:top w:val="single" w:sz="4" w:space="1" w:color="CCCCCC"/>
-      </w:pBdr>
     </w:pPr>
     <w:r>
       <w:rPr>

@@ -1,0 +1,17 @@
+{
+  "_description": "Formal report style. Calibri, wider left margin (for binding), larger H1 for clear section breaks.",
+  "font": "Calibri",
+  "bodySize": 22,
+  "lineSpacing": 276,
+  "paragraphSpaceAfter": 160,
+  "justification": "both",
+  "margins": { "top": 1440, "right": 1134, "bottom": 1440, "left": 1701 },
+  "headings": [
+    { "size": 36, "bold": true,  "italic": false, "spaceBefore": 720, "spaceAfter": 200 },
+    { "size": 28, "bold": true,  "italic": false, "spaceBefore": 480, "spaceAfter": 120 },
+    { "size": 24, "bold": true,  "italic": false, "spaceBefore": 320, "spaceAfter": 80  },
+    { "size": 22, "bold": true,  "italic": true,  "spaceBefore": 240, "spaceAfter": 60  },
+    { "size": 22, "bold": true,  "italic": false, "spaceBefore": 160, "spaceAfter": 40  },
+    { "size": 22, "bold": false, "italic": true,  "spaceBefore": 120, "spaceAfter": 40  }
+  ]
+}

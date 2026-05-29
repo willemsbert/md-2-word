@@ -1,0 +1,12 @@
+{
+  "name": "md-2-word",
+  "version": "1.0.0",
+  "description": "Convert Markdown files to .docx",
+  "main": "convert.js",
+  "scripts": {
+    "convert": "node convert.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.17"
+  }
+}

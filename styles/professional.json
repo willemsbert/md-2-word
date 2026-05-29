@@ -1,0 +1,17 @@
+{
+  "_description": "Clean modern style. Calibri, black headings, justified body. Good all-rounder for business documents.",
+  "font": "Calibri",
+  "bodySize": 22,
+  "lineSpacing": 276,
+  "paragraphSpaceAfter": 160,
+  "justification": "both",
+  "margins": { "top": 1440, "right": 1440, "bottom": 1440, "left": 1440 },
+  "headings": [
+    { "size": 32, "bold": true,  "italic": false, "spaceBefore": 480, "spaceAfter": 120 },
+    { "size": 26, "bold": true,  "italic": false, "spaceBefore": 360, "spaceAfter": 80  },
+    { "size": 24, "bold": true,  "italic": false, "spaceBefore": 280, "spaceAfter": 60  },
+    { "size": 22, "bold": true,  "italic": true,  "spaceBefore": 200, "spaceAfter": 60  },
+    { "size": 22, "bold": true,  "italic": false, "spaceBefore": 160, "spaceAfter": 40  },
+    { "size": 22, "bold": false, "italic": true,  "spaceBefore": 120, "spaceAfter": 40  }
+  ]
+}

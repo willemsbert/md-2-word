@@ -1,0 +1,17 @@
+{
+  "_description": "Minimal style. Georgia serif, restrained sizes, lots of white space. Easy on the eye for long reads.",
+  "font": "Georgia",
+  "bodySize": 22,
+  "lineSpacing": 312,
+  "paragraphSpaceAfter": 120,
+  "justification": "both",
+  "margins": { "top": 1701, "right": 1701, "bottom": 1701, "left": 1701 },
+  "headings": [
+    { "size": 26, "bold": true,  "italic": false, "spaceBefore": 560, "spaceAfter": 140 },
+    { "size": 24, "bold": true,  "italic": false, "spaceBefore": 400, "spaceAfter": 100 },
+    { "size": 22, "bold": true,  "italic": false, "spaceBefore": 300, "spaceAfter": 80  },
+    { "size": 22, "bold": false, "italic": true,  "spaceBefore": 200, "spaceAfter": 60  },
+    { "size": 22, "bold": false, "italic": false, "spaceBefore": 160, "spaceAfter": 40  },
+    { "size": 22, "bold": false, "italic": true,  "spaceBefore": 120, "spaceAfter": 40  }
+  ]
+}

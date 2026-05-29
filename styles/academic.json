@@ -1,0 +1,17 @@
+{
+  "_description": "Traditional academic style. Cambria serif, double-spaced, generous margins. Suits papers, theses, formal reports.",
+  "font": "Cambria",
+  "bodySize": 24,
+  "lineSpacing": 480,
+  "paragraphSpaceAfter": 0,
+  "justification": "both",
+  "margins": { "top": 1440, "right": 1440, "bottom": 1440, "left": 1440 },
+  "headings": [
+    { "size": 28, "bold": true,  "italic": false, "spaceBefore": 720, "spaceAfter": 160 },
+    { "size": 26, "bold": true,  "italic": false, "spaceBefore": 480, "spaceAfter": 120 },
+    { "size": 24, "bold": true,  "italic": true,  "spaceBefore": 360, "spaceAfter": 80  },
+    { "size": 24, "bold": true,  "italic": false, "spaceBefore": 240, "spaceAfter": 60  },
+    { "size": 24, "bold": false, "italic": true,  "spaceBefore": 160, "spaceAfter": 40  },
+    { "size": 24, "bold": false, "italic": false, "spaceBefore": 120, "spaceAfter": 40  }
+  ]
+}

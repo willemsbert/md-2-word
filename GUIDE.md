@@ -151,9 +151,9 @@ Claude will call `convert_to_word` or `list_styles` automatically.
 ### Test `/convert-pdf`
 
 1. Open this project in Claude Code (VS Code or terminal)
-2. Create a test file: `echo "# Hello" > /tmp/test.pdf` — or use a real PDF
-3. Type: `/convert-pdf /tmp/test.pdf`
-4. Expected: `/tmp/test.md` is created
+2. Use a real PDF file (e.g. one from your Downloads folder)
+3. Type: `/convert-pdf /path/to/your.pdf`
+4. Expected: a `.md` file is created next to the PDF
 
 ### Test `node convert.js`
 
